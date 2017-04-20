@@ -275,26 +275,91 @@ input[type=submit] {
 	cursor: pointer;
 }
 
-/* Media Query */
-/*@media screen and (max-width:768px) {
 
-	#masthead {
-		max-width: 100%;
-	}
 
-	.container {
-		width: 100%;
-	}
-	#main-content,
-	#sidebar {
-		width: 100%;
 
-	}
+/*****************  Media Queries ********************/
 
-	#main-section {
-		margin-top: 40px;
-	}
-}*/
+
+
+/****** Tablet Optimization @ 980px ********/
+
+
+@media only screen and (max-width:980px) {
+
+
+
+#masthead {
+	position: static;
+	margin-bottom: 10px;
+
+}
+
+#masthead nav {
+	float: right;
+	max-width: 100%;
+	text-align: center;
+	margin-right: 20px;
+}
+
+
+#main-container {
+	padding-top: 10px;
+	max-width: 85%;
+	padding-bottom: 10px;
+}
+
+
+/* Can't figure out why main-container won't resize to 85% when scren size is 980px */
+
+
+.work {
+	max-width: 85%;
+}
+
+.sidebar {
+	max-width: 100%;
+}
+
+
+
+
+
+
+/****** Phablet Optimization @ 768px ********/
+
+
+@media only screen and (max-width:768px) {
+
+
+#masthead {
+	position: static;
+	margin-bottom: 10px;
+
+}
+
+#masthead nav {
+	float: right;
+	max-width: 100%;
+	text-align: center;
+	margin-left: 20px;
+}
+
+#main-container {
+	padding-top: 10px;
+	max-width: 85%;
+	padding-bottom: 10px;
+}
+
+
+.sidebar {
+	max-width: 100%;
+}
+
+}
+
+
+
 
 
 
@@ -308,10 +373,17 @@ input[type=submit] {
 }
 
 #masthead {
+
 	position: static;
 	margin-bottom: 10px;
 }
 
+#masthead nav {
+	float: left;
+	max-width: 100%;
+	text-align: center;
+	margin-left: 45px;
+}
 
 
 #main-container {
@@ -320,58 +392,16 @@ input[type=submit] {
 	padding-bottom: 10px;
 }
 
-
-#masthead nav {
-	float: left;
+.work {
 	max-width: 100%;
-	text-align: center;
-	margin-left: 45px;
 }
+
 
 .sidebar {
 	max-width: 100%;
 }
 
-
-
-/****** Phablet Optimization @ 768px ********/
-
-
-@media only screen and (max-width:768px) {
-
-
-#logo {
-	width: 100%;
 }
-
-#masthead {
-
-	margin-bottom: 10px;
-
-}
-
-#main-container {
-	padding-top: 10px;
-	max-width: 85%;
-	padding-bottom: 10px;
-}
-
-
-#masthead nav {
-	float: left;
-	max-width: 100%;
-	text-align: center;
-	margin-left: 45px;
-}
-
-.sidebar {
-	max-width: 100%;
-}
-
-
-
-
-
 
 
 
